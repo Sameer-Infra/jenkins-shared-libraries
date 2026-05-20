@@ -12,7 +12,7 @@ def call() {
         kubectl apply -f k8s-Ingress.yaml
         kubectl apply -f k8s-hpa.yaml
 
-        kubectl get all -n dev
+        kubectl get all -n dev || true
 
         echo "All Kubernetes resources deployed successfully 🚀"
     """
