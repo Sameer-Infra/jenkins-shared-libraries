@@ -5,12 +5,12 @@ def call() {
 
         kubectl version --client
 
-        kubectl apply -f K8s-Namespace.yaml
-        kubectl apply -f K8s-Configmap.yaml
-        kubectl apply -f K8s-Deployment.yaml
-        kubectl apply -f K8s-Service.yaml
-        kubectl apply -f K8s-Ingress.yaml
-        kubectl apply -f K8s-hpa.yaml
+        kubectl apply -f k8s-Namespace.yaml
+        kubectl apply -f k8s-ConfigMap.yaml
+        kubectl apply -f k8s-Deployment.yaml
+        kubectl apply -f k8s-Service.yaml
+        kubectl apply -f k8s-Ingress.yaml
+        kubectl apply -f k8s-hpa.yaml
 
         kubectl get all -n dev
 
